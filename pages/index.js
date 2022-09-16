@@ -22,6 +22,8 @@ export default function Home({ allPostsData }) {
       </Head>
       <section className={utilStyles.headingMd}>
         <Link href={"/posts/about"}>About</Link>
+        <br />
+        <Link href={"/posts/newEntry"}>New Entry</Link>
       </section>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
         <h2 className={utilStyles.headingLg}>Blog</h2>

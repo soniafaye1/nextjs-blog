@@ -25,6 +25,22 @@ export default function Layout({ children, home }) {
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
+
+      <div className={utilStyles.side_menu}>
+        <input id={utilStyles.menu_toggle} type="checkbox" />
+        <label className={utilStyles.menu_btn} htmlFor={utilStyles.menu_toggle}>
+          <span></span>
+        </label>
+
+        <ul className={utilStyles.menu_box}>
+          <li className={utilStyles.menu_item}>
+            <Link href="/">Home</Link>
+          </li>
+          <li className={utilStyles.menu_item}>
+            <Link href="/posts/about">About</Link>
+          </li>
+        </ul>
+      </div>
       <header className={styles.header}>
         {home ? (
           <>
